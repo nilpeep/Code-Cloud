@@ -1,5 +1,5 @@
 
-
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
 
 *{
@@ -180,8 +180,9 @@ main h2{
 hr{
     margin-top: 1rem;
     background: rgba(221, 221, 221, 0.87);
-    width: 35.3125rem;
+    width: 98%;
     height: 0.0625rem;
+    margin: auto;
     
 }
 
@@ -202,5 +203,42 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1.7rem;
+    
 
 }
+
+.ustyazi{
+    color: #000;
+    font-family: inter;
+    font-size: 0.824rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 8.875rem;
+}
+
+.altyazi{
+    color: #20889F;
+    font-family: Inter;
+    font-size: 0.5625rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    width: 8.875rem;
+
+    }
+
+ .india img{
+    outline: 7.6px solid #20889F;
+    border-radius: 0.625rem;
+    margin-right: 1.25rem;
+    
+ }
+
+ h3{
+    color: #20889F;
+    margin-bottom: 1rem;
+    font-family: Inter;
+    font-size: 15px;
+ }
