@@ -20,7 +20,7 @@ margin-left: 19px;
 }
 
 .name{
-    
+    margin: 20px;
     font-size: 18px;
 }
 
@@ -107,6 +107,7 @@ aside{
     flex-direction: column;
     gap: 0.5rem;
     padding: 24px;
+    margin-left: 5rem;
 }
 
 aside div{
@@ -129,37 +130,77 @@ aside div a{
    
 }
 main{
-    width: 50%;
+    width: 70%;
     padding: 20px;
-  
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 40px;
-    border: 1px solid red;
 }
 
 .container{
     display: flex;
     align-items: center;
-    width: 60%;
-    gap: 10rem;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 1rem;  
     
-    
-  
-    
-   
+       
 }
 
 .isim{
-    
     display: flex;
+    flex-direction: column; 
+    margin-left: 1rem;
+    
 
 }
 
 main h2{
     color: #20889F;
-
+    margin-bottom: 1rem;
     font-family: Inter;
     font-size: 15px;
 }
 
+.yasar{
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.8rem;
+    margin-right: 3rem;
+
+}
+
+.kisi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+hr{
+    margin-top: 1rem;
+    background: rgba(221, 221, 221, 0.87);
+    width: 35.3125rem;
+    height: 0.0625rem;
+    
+}
+
+#top{
+    margin-top: 1.3rem;
+}
+
+.topFollowers{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 1rem;  
+
+}
+
+.india{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
