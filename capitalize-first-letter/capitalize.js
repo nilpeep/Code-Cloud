@@ -4,12 +4,20 @@
 
 let str="hello my teammates ... nasilsiniz bu akşam hava çok soguk değil"
 
-function splitted(arr){return arr.trim().split(" ").map((s)=>s[0].toUpperCase()+s.slice(1)).join(" ")};
+function splitted(arr){return arr.trim().split(" ").map((s)=>{
+    if(s.length>0){
+      return  s[0].toUpperCase()+s.slice(1)
+    }
+    else{
+        return ""
+    }
+    
+}).join(" ")};
 
 console.log(splitted(str))
 console.log(str)
 
-const str2 = "    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.          "
+const str2 = "    There are many        variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.          "
 
 console.log(splitted(str2))
 
