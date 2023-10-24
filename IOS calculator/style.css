@@ -71,36 +71,52 @@ button:hover {
 
 .clear{
     grid-row: 3;
+    background-color: #A5A5A5;
+    color: #000000;
+
+
 }
 
 .plus{
     grid-row: 3;
     grid-column: 2;
+    background-color: #A5A5A5;
+    color: #000000;
 }
 
 .percent{
     grid-row: 3;
     grid-column: 3;
+    background-color: #A5A5A5;
+    color: #000000;
+
 }
 
 .divide{
     grid-row: 3;
     grid-column: 4;
+    background-color: #F1A33C;
 }
 
 .multiply{
     grid-row: 4;
     grid-column: 4;
+    background-color: #F1A33C;
+
 }
 
 .subtract{
     grid-row: 5;
     grid-column: 4;
+    background-color: #F1A33C;
+
 }
 
 .plus2{
     grid-row: 6;
     grid-column: 4;
+    background-color: #F1A33C;
+
 }
 
 .equal{
@@ -113,6 +129,29 @@ button:hover {
     grid-column: 3;
 }
 
-.1{
-    gridr
+.one{
+    grid-row: 6;
+    grid-column: 1;
+}
+.two{
+    grid-row: 6;
+    grid-column: 2;
+}
+.three{
+    grid-row: 6;
+    grid-column: 3;
+}
+.four{
+    grid-row: 5;
+    grid-column: 1;
+}
+.five{
+    grid-row: 5;
+    grid-column: 2;
+}
+.six{
+    grid-row: 5;
+}
+.seven, .eight, .nine{
+    grid-row: 4;
 }

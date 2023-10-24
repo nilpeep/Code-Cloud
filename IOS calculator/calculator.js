@@ -16,7 +16,11 @@ buttons.forEach((button) => {
             display.value = (parseFloat(display.value) / 100).toString();}
         else if (e.target.innerText === 'AC') {
             display.value = '0'; // Clear the input
-        } else {
+        }
+        else if(e.target.innerText==="+/-"){
+            display.value*=-1
+        }
+        else {
             // Replace 'x' with '*' and '÷' with '/'
             display.value += e.target.innerText.replace('x', '*').replace('÷', '/');
         }
