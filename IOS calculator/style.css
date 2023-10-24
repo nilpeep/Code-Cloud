@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    background-color: #000000;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    padding: 20px;
+    height: 600px;
+}
+
+.display {
+   
+    grid-column: span 4;
+    background-color: #000000;
+   
+    padding: 10px;
+    width: 85%;
+    grid-row: 2;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    font-size: 2em;
+    color: #fff;
+    text-align: right;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    font-size: 2em;
+    background-color: #333333;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,1fr);
+    gap: 5px;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+.zero{
+    grid-column: span 2;
+    grid-row: 7;
+    width: 140px;
+    text-align: left;
+    padding-left: 30px
+}
+
+.clear{
+    grid-row: 3;
+}
+
+.plus{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.percent{
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.divide{
+    grid-row: 3;
+    grid-column: 4;
+}
+
+.multiply{
+    grid-row: 4;
+    grid-column: 4;
+}
+
+.subtract{
+    grid-row: 5;
+    grid-column: 4;
+}
+
+.plus2{
+    grid-row: 6;
+    grid-column: 4;
+}
+
+.equal{
+    grid-row: 7;
+    grid-column: 4;
+}
+
+.dot{
+    grid-row: 7;
+    grid-column: 3;
+}
+
+.1{
+    gridr
+}
