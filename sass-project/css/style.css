@@ -7,6 +7,8 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
+  background-color: pink;
+  color: white;
 }
 
 header {
@@ -110,12 +112,61 @@ header nav ul li a:hover {
 .articles {
   display: flex;
   padding: 1rem;
+  gap: 1rem;
 }
-.articles .article1 {
+.articles .article1, .articles .article2 {
   border-radius: 5px;
   background-color: gray;
-  width: 45%;
+  width: 50%;
   height: 200px;
+  padding: 1rem;
+  color: white;
+}
+footer p {
+  background-color: hotpink;
+}
+footer .social-icons {
+  display: flex;
+}
+footer .social-icons .social1 {
+  flex: 1;
+  font-size: 1rem;
+  padding: 5px;
+  background-color: #4ec382;
+  color: blue;
+  text-decoration: overline;
+}
+footer .social-icons .social2 {
+  flex: 1;
+  font-size: 2rem;
+  padding: 5px;
+  background-color: #a63838;
+  color: orange;
+  text-decoration: overline;
+}
+footer .social-icons .social3 {
+  flex: 1;
+  font-size: 3rem;
+  padding: 5px;
+  background-color: #2b8051;
+  color: purple;
+  text-decoration: overline;
+}
+footer .social-icons .social4 {
+  flex: 1;
+  font-size: 4rem;
+  padding: 5px;
+  background-color: #5a1e1e;
+  color: red;
+  text-decoration: underline;
+}
+footer .social-icons .social5 {
+  flex: 1;
+  font-size: 5rem;
+  padding: 5px;
+  background-color: #113421;
+  color: green;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
