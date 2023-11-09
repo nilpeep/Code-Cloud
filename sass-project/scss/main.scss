@@ -1,4 +1,4 @@
-@import "variables", "reset",;
+@import "variables", "reset","mixins";
 body{
     font-family: $fontFamily;
     font-size: $fontSize;
@@ -54,5 +54,37 @@ header{
             background-color: $bgColor;
             cursor: pointer;
         }
+    }
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    .card1{
+        @include kart(black,white)
+    }
+    .card2{
+        @include kart(blue,yellow)
+
+    }
+    .card3{
+        @include kart(red,yellow)
+    }
+    .card4{
+        @include kart(purple,blue)
+    }
+}
+
+.articles{
+    display: flex;
+    padding: 1rem;
+    .article1{
+        border-radius: 5px;
+        background-color: gray;
+        width: 45%;
+        height: 200px;
     }
 }
