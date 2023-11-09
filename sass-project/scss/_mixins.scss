@@ -1,0 +1,10 @@
+@mixin kart($bg, $color){
+    background-color: $bg;
+    color: $color;
+    width: 100px;
+    height: 150px;
+    border: $myBorder;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+}
