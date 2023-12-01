@@ -1,0 +1,32 @@
+/* Color Theme Swatches in Hex */
+form {
+  background-color: #005148;
+  color: #CCEA8D;
+  padding: 30px;
+  font-size: 1.5rem;
+}
+form .giderGirisi {
+  background-color: #019587;
+  padding: 1rem;
+}
+form .giderGirisi input {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #005148;
+  width: 100px;
+  height: 20px;
+  background-color: #CCEA8D;
+  border: 1px solid #005148;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 5px;
+}
+form .giderGirisi input:hover {
+  border-color: #CCEA8D;
+}
+form .giderGirisi input:focus {
+  outline: none;
+  border-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

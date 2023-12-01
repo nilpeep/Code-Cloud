@@ -1,0 +1,33 @@
+@import 'variables';
+
+form{
+    background-color: $bgColor;
+    color: $fontColor;
+    padding: 30px;
+    font-size: 1.5rem;
+    .giderGirisi{
+        background-color: $bgInput;
+        padding: 1rem;
+        input{
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: $bgColor;
+            width: 100px;
+            height: 20px;
+            background-color: $fontColor;
+            border: 1px solid $bgColor;
+            border-radius: 4px;
+            padding: 8px;
+            margin: 5px;
+            &:hover {
+                border-color: $fontColor;
+            }
+            &:focus {
+                outline: none;
+                border-color: green;
+            }
+            
+        }
+        
+    }
+}
