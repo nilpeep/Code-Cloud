@@ -9,12 +9,14 @@
 }
 
 .cardContainer{
+    margin: 1rem 7rem 3rem;
     background-color: red;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    width: 85%;
 }
 
 .card {

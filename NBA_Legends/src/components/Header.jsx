@@ -14,8 +14,8 @@ const Header = ({onFilterChange}) => {
   return (
     <div className={HeaderStyle.header} >
         <img src={image} alt="" />
-        <h1>NBA LEGENDS</h1>
-        <input type="text" placeholder=' Search player...' onChange={handleSearch}/>
+        <h1 className={HeaderStyle.h1}>NBA LEGENDS</h1>
+        <input className={HeaderStyle.input} type="text" placeholder=' Search player...' onChange={handleSearch}/>
     </div>
   )
 }
