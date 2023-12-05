@@ -1,7 +1,11 @@
+import Header from "./components/Header";
+import CardContainer from "./components/CardContainer";
+
 function App() {
   return (
     <div>
-      <h1>React App</h1>
+      <Header/>
+      <CardContainer/>
     </div>
   )
 }
