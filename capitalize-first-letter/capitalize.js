@@ -46,8 +46,10 @@ const books = [
     ];
 
 const minRating = 4.5
-const filtered = books.filter((book)=>book.rating>=minRating).map((b)=>({
+function filtered(obj,minRating){ 
+    
+    return obj.filter((book)=>book.rating>=minRating).map((b)=>({
     title:b.title,
     author:b.author
-}))
-console.log(filtered)
+}))}
+console.log(filtered(books,minRating))
