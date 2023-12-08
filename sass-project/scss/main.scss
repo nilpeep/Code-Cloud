@@ -1,0 +1,139 @@
+@import "variables", "reset","mixins";
+body{
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    background-color: $bgColor;
+    color: white;
+}
+
+header{
+    background-color: $navBgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    img{
+        border: $myBorder;
+        border-radius: 10px;
+        width: 80px;
+    }
+    nav{
+        ul{
+            display: flex;
+            gap: 1.5rem;
+            list-style-type: none;
+            li a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    text-decoration: underline;
+                }
+               
+            }
+        }
+    }
+}
+
+.banner{
+    background-color: $bannerBgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+    line-height: 2rem;
+    img{
+        width: 40%;
+        max-width: 600px;
+        min-width: 300px;
+    }
+    button{
+        background-color: $buttonColor;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        &:hover{
+            background-color: $bgColor;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    .card1{
+        @include kart(black,white)
+    }
+    .card2{
+        @include kart(blue,yellow)
+
+    }
+    .card3{
+        @include kart(red,yellow)
+    }
+    .card4{
+        @include kart(purple,blue)
+    }
+}
+
+.articles{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    .article1{
+        border-radius: 5px;
+        background-color: gray;
+        width: 50%;
+        height: 200px;
+        padding: 1rem;
+        color: white;
+    }
+    .article2{
+        @extend .article1;
+    }
+}
+
+footer{
+    p{
+        background-color: $bannerBgColor;
+    }
+
+    .social-icons{
+        display: flex;
+
+
+        $textColors: blue,orange,purple,red,green;
+
+        @for $i from 1 through length($textColors){
+            .social#{$i}{
+                flex: 1;
+                font-size: $i * 1rem;
+                padding: 5px;
+               
+
+                @if($i % 2 ==0 ){
+                    background-color: darken( #d07474, $i * 10);
+                }@else{
+                    background-color: darken( #74d09d, $i * 10);
+                }
+
+                color: nth($textColors,$i);
+
+                @if($i < 4){
+                    text-decoration: overline;
+                }@else{
+                    
+                    text-decoration: underline;
+                }
+
+            }
+        }
+
+    }
+}
